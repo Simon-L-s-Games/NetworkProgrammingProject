@@ -499,6 +499,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5461607733257967630, guid: 7e2dd9e5d554ec049b1f30311143bf4f, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1322105159
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461607733257967630, guid: 7e2dd9e5d554ec049b1f30311143bf4f, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 371749988
+      objectReference: {fileID: 0}
     - target: {fileID: 8807448183870377029, guid: 7e2dd9e5d554ec049b1f30311143bf4f, type: 3}
       propertyPath: m_Name
       value: PlayerStats (1)
@@ -2400,6 +2408,14 @@ PrefabInstance:
     - target: {fileID: 1832533105301001125, guid: 7e2dd9e5d554ec049b1f30311143bf4f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461607733257967630, guid: 7e2dd9e5d554ec049b1f30311143bf4f, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 843710694
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461607733257967630, guid: 7e2dd9e5d554ec049b1f30311143bf4f, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 371749988
       objectReference: {fileID: 0}
     - target: {fileID: 8807448183870377029, guid: 7e2dd9e5d554ec049b1f30311143bf4f, type: 3}
       propertyPath: m_Name

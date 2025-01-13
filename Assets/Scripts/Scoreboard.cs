@@ -31,6 +31,7 @@ public class Scoreboard : NetworkBehaviour
 
     private void UpdatePlayerStats(ulong clientId, )
     {
-
+        //enum to check what should be updated, switch case depending type
+        //index variable per stat so it's easier to read and not type the wrong index
     }
 }
