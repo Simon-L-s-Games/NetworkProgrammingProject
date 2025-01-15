@@ -13,6 +13,7 @@ public class Player : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        base.OnNetworkSpawn();
         Debug.Log("We have connected and spawned");
     }
 
@@ -33,3 +34,6 @@ public class Player : NetworkBehaviour
 //m_scoreboard.PlayerUpdateDeaths(this.OwnerClientId, m_deathsStat);
 
 //if a player disconnects, remove it from the scoreboard
+
+
+//To do: player moving, sprinting, crouching and jumping
