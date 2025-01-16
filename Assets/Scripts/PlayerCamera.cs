@@ -25,20 +25,18 @@ public class PlayerCamera : NetworkBehaviour
     {
         base.OnNetworkSpawn();
         enabled = IsClient;
-
-        player = GetComponent<Transform>();
-        playerCameraTransform = FindAnyObjectByType<Camera>().transform;
-
-        Cursor.lockState = CursorLockMode.Locked;
-
         if (!IsOwner)
         {
             enabled = false;
             return;
         }
 
+        //player = GetComponent<Transform>();
+        playerCameraTransform = FindAnyObjectByType<Camera>().transform;
         playerCameraTransform.parent = this.transform;
         playerCameraTransform.localPosition = cameraPlacementInPlayer;
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()

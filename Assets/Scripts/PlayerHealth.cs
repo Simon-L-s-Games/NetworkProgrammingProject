@@ -24,4 +24,19 @@ public class PlayerHealth : NetworkBehaviour
     {
         OnHealthChanged?.Invoke(newValue);
     }
+
+    public void TakeDamage(float damage)
+    {
+        m_playerHealth.Value -= damage;
+
+        CheckHealth();
+    }
+
+    private void CheckHealth()
+    {
+        if(m_playerHealth.Value < 0)
+        {
+            GetComponent<NetworkObject>().Despawn();
+        }
+    }
 }
