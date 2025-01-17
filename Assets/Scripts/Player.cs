@@ -1,4 +1,3 @@
-using Cinemachine;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -9,8 +8,6 @@ public class Player : NetworkBehaviour
     private int m_killsStat;
     private int m_deathsStat;
 
-    CinemachineVirtualCamera m_playerCamera;
-
     public override void OnNetworkSpawn()
     {
         base.OnNetworkSpawn();
@@ -20,11 +17,9 @@ public class Player : NetworkBehaviour
     private void Start()
     {
         m_scoreboard = FindAnyObjectByType<Scoreboard>();
-        m_playerCamera = FindAnyObjectByType<CinemachineVirtualCamera>();
         
         if (IsOwner)
         {
-            m_playerCamera.m_Follow = this.transform;
             m_scoreboard.AddPlayerToList(this.OwnerClientId);
         }
     }

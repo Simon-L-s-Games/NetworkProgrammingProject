@@ -1,10 +1,8 @@
-using System;
 using StarterAssets;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Unity.Netcode;
-using UnityEngine.EventSystems;
+
 public class ClientPlayerMove : NetworkBehaviour
 {
     [SerializeField]

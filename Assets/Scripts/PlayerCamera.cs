@@ -1,7 +1,5 @@
-using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 using Unity.Netcode;
 
 public class PlayerCamera : NetworkBehaviour

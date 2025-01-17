@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using Unity.Netcode;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public enum StatUpdateType
@@ -26,6 +25,8 @@ public class Scoreboard : NetworkBehaviour
 
     public Action<ulong, int> PlayerUpdateDeaths;
     public Action<ulong, int> PlayerUpdateKills;
+
+    
 
     private void Start()
     {

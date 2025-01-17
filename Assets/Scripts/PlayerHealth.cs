@@ -1,10 +1,9 @@
-using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.Events;
 
 public class PlayerHealth : NetworkBehaviour
 {
-    private NetworkVariable<float> m_playerHealth = new(100f, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner); 
+    private NetworkVariable<float> m_playerHealth = new(100f, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server); 
     public UnityAction<float> OnHealthChanged;
 
     public override void OnNetworkSpawn()
@@ -34,7 +33,7 @@ public class PlayerHealth : NetworkBehaviour
 
     private void CheckHealth()
     {
-        if(m_playerHealth.Value < 0)
+        if(m_playerHealth.Value <= 0)
         {
             GetComponent<NetworkObject>().Despawn();
         }

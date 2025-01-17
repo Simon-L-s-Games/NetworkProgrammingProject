@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 8108073985649493105}
   - component: {fileID: 8529066012710708441}
   - component: {fileID: -1017109128449208330}
+  - component: {fileID: 6935738059269725058}
+  - component: {fileID: 3619647662551487890}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -203,6 +205,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3619647662551487890}
+        m_TargetAssemblyTypeName: PlayerEmotes, Assembly-CSharp
+        m_MethodName: OnEmote
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: aeed8555-16fc-4891-9795-6ed2a78119e8
+    m_ActionName: 'Player/Emote[/Keyboard/f]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -321,6 +339,35 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   shootCooldown: 0.4
+--- !u!114 &6935738059269725058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813239083554588852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee68cc69617b04e41b83ea6a874c8005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+--- !u!114 &3619647662551487890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813239083554588852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cde3ed45853f524f99870d8a2c46cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_emoteLifetime: 5
+  m_emotePrefab: {fileID: 4889732286771399445, guid: 98d3c3452d68fe846b019b3ed380d56b, type: 3}
+  m_emoteLocalPosition: {x: 0, y: 1.5, z: 0}
 --- !u!1 &6842921412376218861
 GameObject:
   m_ObjectHideFlags: 0
