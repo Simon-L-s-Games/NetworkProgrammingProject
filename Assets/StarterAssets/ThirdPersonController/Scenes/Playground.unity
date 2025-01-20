@@ -378,7 +378,7 @@ MonoBehaviour:
     NetworkMessageMetrics: 1
     NetworkProfilingMetrics: 1
     OldPrefabList: []
-  RunInBackground: 0
+  RunInBackground: 1
   LogLevel: 1
 --- !u!4 &189371940
 Transform:
